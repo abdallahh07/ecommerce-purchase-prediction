@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+data/
+__pycache__/
+*.pyc
+ecommerce_model/trained_models/*.pkl
+.DS_Store
