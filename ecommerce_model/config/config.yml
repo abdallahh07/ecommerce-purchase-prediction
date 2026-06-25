@@ -1,0 +1,22 @@
+pipeline_name: lgbm_pipeline
+pipeline_save_file: lgbm_pipeline.pkl
+
+data_file: 2019-Oct.csv
+sample_frac: 0.1
+random_state: 42
+test_size: 0.2
+
+target: purchased
+
+features:
+  - n_views
+  - n_carts
+  - n_events
+  - avg_price
+  - max_price
+  - n_unique_products
+
+model_params:
+  class_weight: balanced
+  n_jobs: -1
+  random_state: 42
