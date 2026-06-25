@@ -29,3 +29,15 @@ Binary classification model predicting whether a user session will result in a p
 | n_unique_products | Number of unique products viewed   |
 
 ## Project Structure
+
+´´´
+ecommerce_model/
+├── config/config.yml # model parameters and paths
+├── processing/
+│ ├── data_manager.py # load data, save/load model
+│ └── features.py # session feature engineering
+├── pipeline.py # sklearn pipeline definition
+train_pipeline.py # run training end-to-end
+predict.py # load model and predict
+research.ipynb # EDA and experimentation
+´´´
